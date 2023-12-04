@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercitazione JS</title>
+    <link rel="stylesheet" href="assets/style.css">
     <script src="assets/index_1.js" defer></script>
     <script src="assets/index_2.js" defer></script>
 </head>
@@ -13,18 +14,28 @@
     </header>
     <main>
         <form action="#" id="createPet">
-            <label for="petName">Name</label>
-            <input type="text" id="petName" name="petName" placeholder="Name of the pet">
-            <label for="ownerName">Owner</label>
-            <input type="text" id="ownerName" name="ownerName" placeholder="Owner name">
-            <label for="specimen">Specimen</label>
-            <input type="text" id="specimen" name="specimen" placeholder="Pet's specimen">
-            <label for="breed">Breed</label>
-            <input type="text" id="breed" name="breed" placeholder="Pet's breed">
-            <button type="button" onclick="createPet(event)">Create Pet</button>
-            <button type="button" onclick="printPets()">Print Pets</button>
+            <div>
+                <label for="petName">Name</label>
+                <input type="text" id="petName" name="petName" placeholder="Name of the pet">
+                <label for="ownerName">Owner</label>
+                <input type="text" id="ownerName" name="ownerName" placeholder="Owner name">
+                <label for="specimen">Specimen</label>
+                <input type="text" id="specimen" name="specimen" placeholder="Pet's specimen">
+                <label for="breed">Breed</label>
+                <input type="text" id="breed" name="breed" placeholder="Pet's breed">
+            </div>
+            <div>
+                <button type="button" onclick="createPet(event)">Create Pet</button>
+            </div>
         </form>
-        <div id="pets"></div>
+        <div id="pets">
+            <div class="singleAnimal">
+                <p>Name: Curly</p>
+                <p>Owner: Larry Carlson</p>
+                <p>Specimen: Dog</p>
+                <p>Breed: Labrador</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
